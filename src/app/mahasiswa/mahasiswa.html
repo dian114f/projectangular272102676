@@ -20,17 +20,13 @@
       </div>
     </div>
 
-    
     <section class="content">
       <div class="container-fluid">
 
-       
-        <div class="row mb-3">
-          <div class="col-12 d-flex justify-content-start">
-            <button id="btnTambahMahasiswa" class="btn btn-primary">
-              <i class="fas fa-plus"></i> Tambah Mahasiswa
-            </button>
-          </div>
+        <div class="row">
+          <button id="tambahButton" class="btn btn-primary mb-2" data-toggle="modal" data-target="#tambahModal">
+            <i class="fa fa-plus"></i> Tambah
+          </button>
         </div>
 
         <div class="row">
@@ -50,7 +46,6 @@
                   </tr>
                 </thead>
                 <tbody>
-     
                 </tbody>
               </table>
             </div>
@@ -63,4 +58,107 @@
   </div>
 
   <app-footer></app-footer>
+</div>
+
+
+<!-- ======================
+      MODAL FORM INPUT
+====================== -->
+<div class="modal fade" id="tambahModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title"><i class="fa fa-plus"></i> Mahasiswa Baru</h5>
+        <button class="close text-white" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="row">
+          <div class="col-md-12">
+            <label>NIM</label>
+            <input type="text" id="nimText" class="form-control" />
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-md-12">
+            <label>Nama</label>
+            <input type="text" id="namaText" class="form-control" />
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-md-12">
+            <label>Jenis Kelamin</label>
+           <select id="jenisKelaminSelect" class="form-control">
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+           </select>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-md-12">
+            <label>Tempat Lahir</label>
+            <input type="text" id="tempatLahirText" class="form-control" />
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-md-12">
+            <label>Tanggal Lahir (yyyy-mm-dd)</label>
+            <input type="date" id="tanggalLahirText" class="form-control" />
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-md-12">
+            <label>Jurusan / Prodi</label>
+            <select id="jpSelect" class="form-control">
+              <option value="SI/SI">SI/SI</option>
+              <option value="TI/TI">TI/TI</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-md-12">
+            <label>Alamat</label>
+            <input type="text" id="alamatText" class="form-control" />
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-md-12">
+            <label>Status Pernikahan</label>
+            <select id="statusNikahSelect" class="form-control">
+              <option value="Belum Menikah">Belum Menikah</option>
+              <option value="Menikah">Menikah</option>
+              <option value="Duda">Duda</option>
+              <option value="Janda">Janda</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-md-12">
+            <label>Tahun Masuk</label>
+            <input type="number" id="tahunMasukText" class="form-control" />
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-primary" (click)="postRecord()">
+          <i class="fa fa-save"></i> Simpan
+        </button>
+      </div>
+
+    </div>
+  </div>
 </div>
