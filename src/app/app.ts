@@ -8,7 +8,7 @@ import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('angular272102691');
+  protected readonly title = signal('angular272102676');
 
   constructor(private router: Router) {
     

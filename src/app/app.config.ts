@@ -18,5 +18,8 @@ export const appConfig: ApplicationConfig = {
           }), provideServiceWorker('ngsw-worker.js', {
             enabled: !isDevMode(),
             registrationStrategy: 'registerWhenStable:30000'
-          }), provideHttpClient()]
+          }), provideHttpClient(), provideServiceWorker('ngsw-worker.js', {
+            enabled: !isDevMode(),
+            registrationStrategy: 'registerWhenStable:30000'
+          })]
 };
