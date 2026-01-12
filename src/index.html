@@ -2,127 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Angular272102676</title>
+  <title>Angular AdminLTE</title>
   <base href="/">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Icons -->
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/icons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/icons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/icons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/icons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/icons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/icons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 
-  <!-- Google Font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
-  <!-- DataTables CSS -->
-  <link rel="stylesheet" href="assets/admin-lte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-  <link rel="stylesheet" href="assets/admin-lte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
-  <link rel="stylesheet" href="assets/admin-lte/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/adminlte/plugins/fontawesome-free/css/all.min.css">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="assets/admin-lte/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="assets/adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
 
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="assets/adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
 
-  <!-- Tempusdominus Bootstrap 4 -->
-  <link rel="stylesheet" href="assets/admin-lte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <link rel="stylesheet" href="assets/adminlte/plugins/jqvmap/jqvmap.min.css">
 
-  <!-- iCheck -->
-  <link rel="stylesheet" href="assets/admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <link rel="stylesheet" href="assets/adminlte/dist/css/adminlte.min.css">
 
-  <!-- JQVMap -->
-  <link rel="stylesheet" href="assets/admin-lte/plugins/jqvmap/jqvmap.min.css">
+  <link rel="stylesheet" href="assets/adminlte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
 
-  <!-- AdminLTE -->
-  <link rel="stylesheet" href="assets/admin-lte/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="assets/adminlte/plugins/daterangepicker/daterangepicker.css">
 
-  <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="assets/admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="assets/admin-lte/plugins/daterangepicker/daterangepicker.css">
-
-  <!-- Summernote -->
-  <link rel="stylesheet" href="assets/admin-lte/plugins/summernote/summernote-bs4.min.css">
-
-  <link rel="manifest" href="manifest.webmanifest">
-  <meta name="theme-color" content="#1976d2">
+  <link rel="stylesheet" href="assets/adminlte/plugins/summernote/summernote-bs4.min.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed sidebar-collapse">
   <app-root></app-root>
 
-  <!-- jQuery -->
-  <script src="assets/admin-lte/plugins/jquery/jquery.min.js"></script>
+  <script src="assets/adminlte/plugins/jquery/jquery.min.js"></script>
 
-  <!-- jQuery UI -->
-  <script src="assets/admin-lte/plugins/jquery-ui/jquery-ui.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-  <script>
-    $.widget.bridge('uibutton', $.ui.button)
-  </script>
+  <script src="assets/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Bootstrap 4 -->
-  <script src="assets/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/adminlte/dist/js/adminlte.min.js"></script>
 
-  <!-- ChartJS -->
-  <script src="assets/admin-lte/plugins/chart.js/Chart.min.js"></script>
+  <script src="assets/adminlte/plugins/chart.js/Chart.min.js"></script>
+  <script src="assets/adminlte/plugins/sparklines/sparkline.js"></script>
+  <script src="assets/adminlte/plugins/jqvmap/jquery.vmap.min.js"></script>
+  <script src="assets/adminlte/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+  <script src="assets/adminlte/plugins/jquery-knob/jquery.knob.min.js"></script>
+  <script src="assets/adminlte/plugins/moment/moment.min.js"></script>
+  <script src="assets/adminlte/plugins/daterangepicker/daterangepicker.js"></script>
+  <script src="assets/adminlte/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+  <script src="assets/adminlte/plugins/summernote/summernote-bs4.min.js"></script>
+  <script src="assets/adminlte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 
-  <!-- Sparkline -->
-  <script src="assets/admin-lte/plugins/sparklines/sparkline.js"></script>
+  <script src="assets/adminlte/plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="assets/adminlte/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="assets/adminlte/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="assets/adminlte/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+  <script src="assets/adminlte/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="assets/adminlte/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+  <script src="assets/adminlte/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+  <script src="assets/adminlte/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+  <script src="assets/adminlte/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 
-  <!-- JQVMap -->
-  <script src="assets/admin-lte/plugins/jqvmap/jquery.vmap.min.js"></script>
-  <script src="assets/admin-lte/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-
-  <!-- jQuery Knob -->
-  <script src="assets/admin-lte/plugins/jquery-knob/jquery.knob.min.js"></script>
-
-  <!-- Daterangepicker -->
-  <script src="assets/admin-lte/plugins/moment/moment.min.js"></script>
-  <script src="assets/admin-lte/plugins/daterangepicker/daterangepicker.js"></script>
-
-  <!-- Tempusdominus -->
-  <script src="assets/admin-lte/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-
-  <!-- Summernote -->
-  <script src="assets/admin-lte/plugins/summernote/summernote-bs4.min.js"></script>
-
-  <!-- overlayScrollbars -->
-  <script src="assets/admin-lte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-
-  <!-- DataTables Core -->
-  <script src="assets/admin-lte/plugins/datatables/jquery.dataTables.min.js"></script>
-  <script src="assets/admin-lte/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-
-  <!-- DataTables Responsive -->
-  <script src="assets/admin-lte/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-  <script src="assets/admin-lte/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-
-  <!-- DataTables Buttons -->
-  <script src="assets/admin-lte/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
-  <script src="assets/admin-lte/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
-  <script src="assets/admin-lte/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
-  <script src="assets/admin-lte/plugins/datatables-buttons/js/buttons.print.min.js"></script>
-  <script src="assets/admin-lte/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
-
-  <!-- AdminLTE App -->
-  <script src="assets/admin-lte/dist/js/adminlte.js"></script>
-  <script src="assets/admin-lte/dist/js/demo.js"></script>
-  <script src="assets/admin-lte/dist/js/pages/dashboard.js"></script>
+  <script src="assets/adminlte/dist/js/demo.js"></script>
+  <script src="assets/adminlte/dist/js/pages/dashboard.js"></script>
 
   <noscript>Please enable JavaScript to continue using this application.</noscript>
+
 </body>
 </html>
